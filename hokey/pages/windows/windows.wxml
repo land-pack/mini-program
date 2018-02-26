@@ -1,0 +1,5 @@
+<!--pages/windows/windows.wxml-->
+<!--index.wxml-->
+<view class="container">
+<canvas canvas-id="clock"/>
+</view>

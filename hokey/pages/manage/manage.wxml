@@ -1,0 +1,125 @@
+<!--pages/manage/manage.wxml-->
+<view class="container">
+	<view class="page-head">
+		<view class="page-button">
+			<text class="page-target">PH <text class="target-value">6.8</text></text>
+			<text class="page-target">TDS <text class="target-value">58</text></text>
+    <text class="page-target">PN <text class="target-value">8</text></text>
+</view>
+
+
+		<view class="page-canvas">
+			<canvas canvas-id="Temp"></canvas>
+		</view>
+	</view>
+	<view class="page-body">
+		<view class="page-state">Hokey正在运行,目前各项指标正常</view>
+		<view class="canvas-target">
+			<view class="canvas-view">
+				<canvas canvas-id="filter"></canvas>
+				<text>蓄水箱</text>
+			</view>
+			<view class="canvas-view">
+				<canvas canvas-id="fishFood"></canvas>
+				<text>游泳池</text>
+			</view>
+			<view class="canvas-view">
+				<canvas canvas-id="PH"></canvas>
+				<text>太阳能</text>
+			</view>
+
+			<!--<span class="switch-button"><navigator url="../morePages/morePages" open-type="navigate">更多</navigator></span>-->
+		</view>
+		<view class="page-switch">
+			<view class="switch-header">房间灯光</view>
+			<view class="switch-body">
+				<view class="switch-content">
+					<text>一楼客房</text>
+					<switch color="#29ecfc" bindchange="switch1Change" />
+				</view>
+        <view class="switch-content">
+					<text>KTV灯光</text>
+					<switch color="#29ecfc" bindchange="switch1Change" />
+				</view>
+        
+				<view class="switch-content">
+					<text>二楼主卧</text>
+					<switch checked color="#29ecfc" bindchange="switch1Change" />
+				</view>
+				<view class="switch-content">
+					<text>二楼次卧</text>
+					<switch checked color="#29ecfc" bindchange="switch1Change" />
+				</view>
+				<view class="switch-content">
+					<text>三楼主卧</text>
+					<switch checked color="#29ecfc" bindchange="switch1Change" />
+				</view>
+        <view class="switch-content">
+					<text>三楼次卧</text>
+					<switch checked color="#29ecfc" bindchange="switch1Change" />
+				</view>
+        <view class="switch-content">
+					<text>豪华主卧</text>
+					<switch checked color="#29ecfc" bindchange="switch1Change" />
+				</view>
+			</view>
+
+			<view class="switch-header">其他灯光</view>
+			<view class="switch-body">
+				<view class="switch-content">
+					<text>一楼大厅</text>
+					<switch color="#29ecfc" bindchange="switch1Change" />
+				</view>
+        <view class="switch-content">
+					<text>一楼小厅</text>
+					<switch color="#29ecfc" bindchange="switch1Change" />
+				</view>
+                <view class="switch-content">
+					<text>一楼阳台</text>
+					<switch color="#29ecfc" bindchange="switch1Change" />
+				</view>
+        
+        <view class="switch-content">
+					<text>二楼小厅</text>
+					<switch color="#29ecfc" bindchange="switch1Change" />
+				</view>
+
+        <view class="switch-content">
+					<text>二楼阳台</text>
+					<switch color="#29ecfc" bindchange="switch1Change" />
+				</view>
+
+		</view>
+  </view>
+
+
+
+
+		<view class="page-parameter">
+			<view class="parameter-header">
+				<text class="parameter-title">多媒体</text>
+				<text class="parameter-reset">开关<text></text></text>
+			</view>
+			<view class="parameter-body">
+				<view class="white-light">
+					<text class="parameter-name">音量</text>
+					<text class="light-off"></text>
+					<slider class="white-light-slider" bindchange="" value="20"step="5" activeColor="#29ecfc" backgroundColor="#2f383f"/>
+					<text class="light-on"></text>
+				</view>
+				<view class="blue-light">
+					<text class="parameter-name">氛围</text>
+					<text class="light-off"></text>
+					<slider class="white-light-slider" bindchange="" value="50"step="5" activeColor="#29ecfc" backgroundColor="#2f383f"/>
+					<text class="light-on"></text>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="page-foot">
+		<view class="clearfix">
+			
+			<progress class="fl" percent="40" stroke-width="12" active />
+		</view>
+	</view>
+</view>

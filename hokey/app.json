@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/manage/manage",
+    "pages/windows/windows",
+    "pages/view/view",
+    "pages/doors/doors"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00b38a",
+    "navigationBarTitleText": "Smart Home",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/manage/manage",
+        "iconPath": "images/on.png",
+        "selectedIconPath":"images/off.png",
+        "text": "Manage"
+      },
+      {
+        "pagePath": "pages/view/view",
+        "iconPath": "images/open_eye.png",
+        "selectedIconPath": "images/close_eye.png",
+        "text": "View"
+      },
+      {
+        "pagePath": "pages/doors/doors",
+        "iconPath": "images/unlock.png",
+        "selectedIconPath": "images/lock.png",
+        "text": "Lock"
+      },
+      {
+        "pagePath": "pages/windows/windows",
+        "iconPath": "images/light.png",
+        "selectedIconPath": "images/dark.png",
+        "text": "garden"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/me.png",
+        "selectedIconPath": "images/mee.png",
+        "text": "Me"
+      }
+    ]
+  },
+  "debug": true
+}
